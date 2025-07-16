@@ -19,7 +19,6 @@ const unsigned short listen_port = 80;
 **IDLE_SLEEP_MS**: **The proxy server's polling interval if there are no clients.**
 **MAX_CLIENTS**: **The proxy server's maximum client count.**
 **RECV_BUFFER_SIZE**: **The proxy server's max recv size, you should set this to the maximum packet size that can be received from the client and the server for the best compatibility.**
-
 **server_ip**: **The remote server's ip.**
 **server_port**: **The remote server's port.**
 **listen_ip**: **The ip where clients will connect.**
