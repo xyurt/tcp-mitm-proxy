@@ -1,4 +1,4 @@
-&nbsp
+&nbsp;
 # tcp-mitm-proxy
 A multi-client man-in-the-middle (MITM) proxy for TCP connections over IPv4. It allows interception and optional modification of traffic between clients and any remote server, configurable to bind on any IP and port.
 
