@@ -44,7 +44,7 @@ For every client that connects to the proxy server, the proxy create a new socke
 
 **1**: Client connects to the proxy server.
 **2**: Proxy connects to the remote server with a new socket.
---- **2***: Individual connection for every new client.
+--- **2***: Individual connection for every new client. 
 **3**: If a client sends a data to the proxy server, it gets forwarded to the remote server.
 **4**: If a server sends a data to a proxy client, it gets forwarded to the client corresponding to the socket received the data.
 
