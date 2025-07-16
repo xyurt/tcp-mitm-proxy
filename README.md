@@ -42,12 +42,6 @@ int handle_packet_event(SOCKET client, SOCKET server, int from_client, const cha
 ## How it works
 For every client that connects to the proxy server, the proxy create a new socket and connect to the remote server, any data received from the client will be sent to the remote server and every data received from the remote server will be sent to the remote server:
 
-**1**: Client connects to the proxy server.
-**2**: Proxy connects to the remote server with a new socket.
---- **2***: Individual connection for every new client. 
-**3**: If a client sends a data to the proxy server, it gets forwarded to the remote server.
-**4**: If a server sends a data to a proxy client, it gets forwarded to the client corresponding to the socket received the data.
-
 ## How it handles multiple clients
 It maps each client connected to the proxy server to a new socket and every data received and sent will be on that socket.
 Uses no multi-threading and uses select() in order to have the best performance without using threading.
